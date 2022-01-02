@@ -7,12 +7,24 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  line-height: 1.5;
 }
+
+html {
+  scroll-behavior: smooth;
+  }
+
+code::-webkit-scrollbar {
+    width: 0;
+    position: left;
+ }
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 100px;
 }
+
+/* CREATE NAVIGATION */
 
 .nav-list {
   display: flex;
@@ -66,4 +78,20 @@ body {
 
 .nav-link:hover:after {
   opacity: 1;
+}
+
+/* HEADERS STYLE  */
+h1 {
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, blue, fuchsia);
+}
+
+/* Create styles & navigation for footer */
+footer, p {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
 }
