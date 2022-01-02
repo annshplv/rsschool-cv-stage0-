@@ -8,6 +8,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 1.5;
+
+  background-color: lightgrey;
 }
 
 html {
@@ -21,7 +23,10 @@ code::-webkit-scrollbar {
 
 .container {
   max-width: 1440px;
-  margin: 0 100px;
+  margin: 0 150px;
+  padding: 0 30px;
+
+  background-color: gray;
 }
 
 /* CREATE NAVIGATION */
@@ -30,6 +35,7 @@ code::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 
   list-style: none;
 }
@@ -49,7 +55,7 @@ code::-webkit-scrollbar {
   margin-top: 10px;
   position: relative;
 
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
 
   transition: color .1s linear;
@@ -82,16 +88,55 @@ code::-webkit-scrollbar {
 
 /* HEADERS STYLE  */
 h1 {
+  font-size: 50px;
+}
+
+h1 {
 	color: transparent;    
 	-webkit-background-clip: text;
 	background-clip: text;
 	background-image: linear-gradient(to right, blue, fuchsia);
 }
 
-/* Create styles & navigation for footer */
-footer, p {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px;
+h2 {
+  color: blue;
 }
+
+h3 {
+  color: fuchsia;
+}
+
+h1 + h3 {
+  color: lightgrey;
+}
+
+/* Create styles & navigation for footer */
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FLEX */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MARGIN */
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-200 {
+  margin-left: 280px;
+} 
