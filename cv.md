@@ -14,7 +14,7 @@ Hi! I'm 26 y/o June FrontEnd developer.
   * ## My skills:
 * HTML, CSS;
 * JavaSkript;
-* Git, GitHub
+* Git, GitHub;
 * Figma, AdobePhotoshop;
 ## Code examples: 
 ```javascript
