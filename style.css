@@ -1,3 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: lightgrey;
+}
+
+html {
+  scroll-behavior: smooth;
+  }
+
+code::-webkit-scrollbar {
+    width: 0;
+    position: left;
+ }
+
+.container {
+  max-width: 1440px;
+  margin: 0 150px;
+  padding: 0 30px;
+
+  background-color: gray;
+}
+
+/* CREATE NAVIGATION */
+
+.nav-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+
+  list-style: none;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+
+  text-decoration: none;
+}
+
+.nav-link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  position: relative;
+
+  color: whitesmoke;
+  text-decoration: none;
+
+  transition: color .1s linear;
+}
+
+.nav-link:after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+
+  background-color: blue;
+  opacity: 0;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+
+  transition: opacity .1s linear;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.nav-link:hover:after {
+  opacity: 1;
+}
+
+/* HEADERS STYLE  */
 h1 {
-  color: red;
+  font-size: 50px;
+}
+
+h1 {
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right, blue, fuchsia);
+}
+
+h2 {
+  color: blue;
+}
+
+h3 {
+  color: fuchsia;
+}
+
+h1 + h3 {
+  color: lightgrey;
+}
+
+/* Create styles & navigation for footer */
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* FLEX */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* MARGIN */
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-200 {
+  margin-left: 280px;
+} 
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+@media (max-width:1200px){
+  .container{
+      max-width: 970px;
+  }
+}
+
+@media (max-width:992px){
+  .container{
+      max-width: 750px;
+  }
+}
+
+@media (max-width:767px){
+  .container{
+      max-width: 540px;
+  }
+}
+
+@media (max-width:480px){
+  .container{
+      max-width: 320px;
+  }
+}
+
+.none {
+  list-style-type: none;
 }

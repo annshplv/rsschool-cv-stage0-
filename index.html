@@ -1,1 +1,135 @@
-<h1>Hello, world!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>CV Shipilova Ann</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav-list">
+                <a class="nav-link" href="#About">About</a>
+                <a class="nav-link" href="#Skills">Skills</a>
+                <a class="nav-link" href="#Experience">Experience</a>
+                <a class="nav-link" href="#Education">Education</a>
+                <a class="nav-link" href="#Contacts">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="flex-container">
+                <figure>
+                    <img src="./assets/img/selfie.jpg" alt="self-foto" width="230" height="300">
+                </figure>
+                <div class="ml-100 mt-100">
+                    <h1>Anna Shipilova</h1>
+                    <h3>june Front-end developer</h3>
+                </div>
+            </section>
+            
+            <section class="flex-container">
+                <div>
+                    <h2 id="Contacts" class="mt-30">Feel free to contact me:</h2>
+                    <ul>
+                        <li><b>Phone:</b> 8(999)204-77-97</li>
+                        <li><b>E-mail:</b> ann.shplv@gmail.ru</li>
+                    </ul>
+                </div>
+                <div class="ml-200">
+                    <h2 id="About" class="mt-30">About me:</h2>
+                        <p>Hi! I’m 26 y/o june FrontEnd developer.</p>
+                        <h3 class="mt-30">My strengths:</h3>
+                    <ol>
+                        <li>quick learner</li>
+                        <li>team playing</li>
+                        <li>knew many mems</li>
+                        <li>communicable</li>
+                        <li>positive</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="flex-container">
+                <div>
+                    <h2 id="Education" class="mt-30">Education:</h2>
+                    <ul>
+                        <li>Peter the Great St.Petersburg Polytechnic University (SPbPU)
+                        <ul>
+                            <li>International Management</li>
+                            </ul>
+                        <li>Hexlet
+                        <ul>
+                            <li>Layout Designer</li>
+                            <li>Frontend</li>
+                        </ul>
+                        <li>JetBrains</li>
+                    </ul>
+                </div>
+                <div class="ml-100">
+                    <h2 id="Skills" class="mt-30">My skills:</h2>
+                    <ol>
+                        <li>HTML, CSS;</li>
+                        <li>JavaSkript;</li>
+                        <li>Git, GitHub;</li>
+                        <li>Figma, AdobePhotoshop;</li>
+                    </ol>
+                    <h3 class="mt-30">Languages:</h3>
+                    <ul>
+                        <li><b>Russian</b> - native speaker</li>
+                        <li><b>English</b> - A2</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section>
+                <h2 id="Experience" class="mt-30 center">Code examples:</h2>
+                <pre>
+                    <code>
+                        const countChars = (str, char) => {
+                            let i = 0;
+                            let count = 0;
+                            while (i &lt; str.length) {
+                              if (str[i].toLowerCase() === char.toLowerCase()) {
+                                count += 1;
+                              }
+                              i = i + 1;
+                            }
+                            
+                            return count;
+                            };
+                    </code>
+                </pre>
+                <h2 class="center">Project examples:</h2>
+                    <ul class="mt-30 center">
+                        <li class="none"><a href="https://github.com/annshplv/Mortal-Kombat" target="_blank">
+                            <img src="./assets/img/mortalkombat.jpg" width="475" height="230" alt="Mortal-Combat-Game">
+                        </a></li>
+                    </ul>
+                    <h3 class="center">Game Mortal Kombat</h3>
+                    <p class="center">An imitation of the popular mortal kombat game. I used Java script in the development</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-list">
+                <p><a href="https://github.com/annshplv" target="_blank"><img src="./assets/svg/github_logo.svg" alt=logotipeGitHub width="60" height="60"></a></p>
+                <p><a href="https://rs.school/js/" target="_blank"><img src="./assets/svg/rs_school.svg" alt="logotipeRSSchool" width="80" height="80"></a></p>
+                <p>2022©</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
